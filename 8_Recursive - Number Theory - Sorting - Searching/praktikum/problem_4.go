@@ -2,34 +2,32 @@ package main
 
 import (
 	"fmt"
-	"strconv"
+	"sort"
 )
 
 func main() {
-	fmt.Println(FindMinAndMax([]int{5, 7, 4, -2, -1, 8}))
-	fmt.Println(FindMinAndMax([]int{2, -5, -4, 22, 7, 7}))
-	fmt.Println(FindMinAndMax([]int{4, 3, 9, 4, -21, 7}))
-	fmt.Println(FindMinAndMax([]int{-1, 5, 6, 4, 2, 18}))
-	fmt.Println(FindMinAndMax([]int{-2, 5, -7, 4, 7, -20}))
+	fmt.Println(MaxSequence([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
+	fmt.Println(MaxSequence([]int{-2, -5, 6, -2, -3, 1, 5, -6}))
+	fmt.Println(MaxSequence([]int{-2, -3, 4, -1, -2, 1, 5, -3}))
+	fmt.Println(MaxSequence([]int{-2, -5, 6, -2, -3, 1, 6, -6}))
+	fmt.Println(MaxSequence([]int{-2, -5, 6, 2, -3, 1, 6, -6}))
 }
 
-func FindMinAndMax(arr []int) string {
-	min := arr[0]
-	max := arr[0]
+func MaxSequence(arr []int) int {
+	var count = []int{}
+	result := arr[0]
 
-	minString := "min: " + strconv.Itoa(min) + " index: 0"
-	maxString := "max: " + strconv.Itoa(max) + " index: 0"
+	for i := 0; i < len(arr)-1; i++ {
+		if result+arr[i+1] < 0 {
+			result = 0
+			continue
+		}
 
-	for i := 0; i < len(arr); i++ {
-		if arr[i] < min {
-			min = arr[i]
-			minString = "min: " + strconv.Itoa(min) + " index: " + strconv.Itoa(i)
-		}
-		if arr[i] > max {
-			max = arr[i]
-			maxString = ", max: " + strconv.Itoa(max) + " index: " + strconv.Itoa(i)
-		}
+		result += arr[i+1]
+		count = append(count, result)
 	}
 
-	return minString + maxString
+	sort.Ints(count)
+
+	return count[len(count)-1]
 }

@@ -2,32 +2,55 @@ package main
 
 import (
 	"fmt"
-	"sort"
+	"math"
 )
 
 func main() {
-	fmt.Println(MaxSequence([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
-	fmt.Println(MaxSequence([]int{-2, -5, 6, -2, -3, 1, 5, -6}))
-	fmt.Println(MaxSequence([]int{-2, -3, 4, -1, -2, 1, 5, -3}))
-	fmt.Println(MaxSequence([]int{-2, -5, 6, -2, -3, 1, 6, -6}))
-	fmt.Println(MaxSequence([]int{-2, -5, 6, 2, -3, 1, 6, -6}))
+	primaSegiEmpat(2, 3, 13)
+	primaSegiEmpat(5, 2, 1)
 }
 
-func MaxSequence(arr []int) int {
-	var count = []int{}
-	result := arr[0]
-
-	for i := 0; i < len(arr)-1; i++ {
-		if result+arr[i+1] < 0 {
-			result = 0
-			continue
+func primaSegiEmpat(high, wide, start int) {
+	var mapPrime = map[int]int{}
+	index := 0
+	for i := start + 1; i < 10000; i++ {
+		counter := 0
+		for j := 2; j <= int(math.Sqrt(float64(i))); j++ {
+			if i%j == 0 {
+				counter++
+			}
 		}
 
-		result += arr[i+1]
-		count = append(count, result)
+		if counter == 0 {
+			mapPrime[index] = i
+			index++
+		}
+
+		if index == wide*high {
+			break
+		}
 	}
 
-	sort.Ints(count)
+	var array = [][]int{}
+	index = 0
+	for i := 0; i < wide; i++ {
+		var prime = []int{}
+		for j := 0; j < high; j++ {
+			prime = append(prime, mapPrime[index])
+			index++
+		}
 
-	return count[len(count)-1]
+		array = append(array, prime)
+	}
+
+	result := 0
+	for i := 0; i < wide; i++ {
+		for j := 0; j < high; j++ {
+			fmt.Print(array[i][j], "\t")
+			result += array[i][j]
+		}
+		fmt.Println()
+	}
+
+	fmt.Println(result)
 }
