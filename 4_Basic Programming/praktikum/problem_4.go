@@ -13,10 +13,6 @@ func main() {
 func primeNumber(number int) bool {
 	var counter = 0
 
-	if number < 2 {
-		return false
-	}
-
 	for i := 1; i <= number; i++ {
 		if (number % i) == 0 {
 			counter += 1
