@@ -25,7 +25,7 @@ Untuk menginstall golang, download terlebih dahulu [package installation golang]
 Berhasil menginstall golang:
 ![Golang version](praktikum/problem_3.png)
 
-### Problem 4 - Hello 
+### Problem 4 - Hello World
 
 Hasil membuat aplikasi 'Hello, World' dan implementasi beberapa command
 ![Hello, World](screenshots/problem_4.png)
