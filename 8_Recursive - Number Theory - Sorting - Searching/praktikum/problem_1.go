@@ -13,7 +13,7 @@ func main() {
 func primeX(number int) int {
 	var mapPrime = map[int]int{}
 	index := 1
-	for i := 2; i < 30; i++ {
+	for i := 2; i < 100000; i++ {
 		counter := 0
 		for j := 2; j <= int(math.Sqrt(float64(i))); j++ {
 			if i%j == 0 {
@@ -24,6 +24,10 @@ func primeX(number int) int {
 		if counter == 0 {
 			mapPrime[index] = i
 			index++
+		}
+
+		if index > number {
+			break
 		}
 	}
 
