@@ -12,16 +12,16 @@ func main() {
 }
 
 func exponentiation(base, n int) int {
-	var result int = 1
+	result := 1
 
-	for i := 1; i <= n/2; i++ {
-		result *= base
-	}
-
-	if n%2 == 0 {
-		result *= result
-	} else {
-		result = base * (result * result)
+	for n > 0 {
+		if n%2 == 0 {
+			base *= base
+			n /= 2
+		} else {
+			result *= base
+			n -= 1
+		}
 	}
 
 	return result

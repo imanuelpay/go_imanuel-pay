@@ -13,14 +13,14 @@ func main() {
 func pow(x, n int) int {
 	var result int = 1
 
-	for i := 1; i <= n/2; i++ {
-		result *= x
-	}
-
-	if n%2 == 0 {
-		result *= result
-	} else {
-		result = x * (result * result)
+	for n > 0 {
+		if n%2 == 0 {
+			x *= x
+			n /= 2
+		} else {
+			result *= x
+			n -= 1
+		}
 	}
 
 	return result
