@@ -77,7 +77,7 @@ func SelectionSort(data []int) []int {
 }
 ```
 
-Untuk Builtins search dan Builtins search pada Golang, import dahulu packge `sort`
+Untuk Builtins search dan Builtins sorting pada Golang, import dahulu packge `sort`
 
 ## Task
 
