@@ -110,9 +110,9 @@ Output:
 
 ### Problem 2 - Fast Exponentiation
 
-Solusi yang lebih optimal, dengan dengan kompleksitas lebih cepat dari O(n) adalah Logarithmic time - O(log n) atau O(n/2).
+Solusi yang lebih optimal, dengan dengan kompleksitas lebih cepat dari O(n) adalah O(n/2).
 
-Berikut source code dari Problem 2 - Fast Exponentiation menggunakan Logarithmic time - O(log n) atau O(n/2):
+Berikut source code dari Problem 2 - Fast Exponentiation menggunakan O(n/2):
 
 [probem_2.go](praktikum/problem_2.go)
 
