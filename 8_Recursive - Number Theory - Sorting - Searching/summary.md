@@ -2,11 +2,11 @@
 
 ## Resume
 
-+ Fungsi Rekursif adalah fungsi yang memiliki konsep seperti perulangan namun dengan memanggil dirinya sendiri. Pada saat menggunakan fungsi Rekursif, kita perlu berhati-hati dalam mengatur kondisi berhenti dari fungsi, jika tidak maka akan menjadi loop tak terbatas. Contoh penggunaan fungsi Rekursif adalah untuk menghitung faktorial suatu angka atau menghasilkan deret Fibonacci.
++ `Fungsi Rekursif` adalah fungsi yang memiliki konsep seperti perulangan namun dengan memanggil dirinya sendiri. Pada saat menggunakan fungsi Rekursif, kita perlu berhati-hati dalam mengatur kondisi berhenti dari fungsi, jika tidak maka akan menjadi loop tak terbatas. Contoh penggunaan fungsi Rekursif adalah untuk menghitung faktorial suatu angka atau menghasilkan deret Fibonacci.
 
-+ Number Theory adalah sebuah cabang matematika yang mempelajari bilngan bulat. Topik yang paling banyak di bahas dalam Number Theory adalah Bilangan Prima, Kelipatan Persekutuan Terkecil, Faktor Persekutuan Terbesar, Faktorial, Faktor Prima, dll.
++ `Number Theory` adalah sebuah cabang matematika yang mempelajari bilngan bulat. Topik yang paling banyak di bahas dalam Number Theory adalah Bilangan Prima, Kelipatan Persekutuan Terkecil, Faktor Persekutuan Terbesar, Faktorial, Faktor Prima, dll.
 
-+ Searching atau pencarian adalah proses menemukan sebuah sebuah nilai di dalam sebuah daftar nilai. Dalam bahasa pemrograman Golang, sudah terdapat Builtins search. Sedangkan Sorting adalah proses menyusun data dalam urutan tertentu. Sorting bisa di lakukan pada angka, kata, dll.
++ `Searching` atau pencarian adalah proses menemukan sebuah sebuah nilai di dalam sebuah daftar nilai. Dalam bahasa pemrograman Golang, sudah terdapat Builtins search. Sedangkan Sorting adalah proses menyusun data dalam urutan tertentu. Sorting bisa di lakukan pada angka, kata, dll.
 
 ### Fungsi Rekursif dan Number Theory pada Golang
 
