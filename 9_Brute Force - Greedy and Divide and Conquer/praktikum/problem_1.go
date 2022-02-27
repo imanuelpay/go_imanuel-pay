@@ -26,8 +26,13 @@ func SimpleEquations(a, b, c int) {
 		}
 	}
 
+	C := 0
+	for _, data := range cekJumlah {
+		C += data * data
+	}
+
 	// Jika Slice cekJumlah tidak kosong, maka cetak slice cekJumlah
-	if len(cekJumlah) < 1 {
+	if len(cekJumlah) < 1 || C != c {
 		fmt.Println("No solution.")
 	} else {
 		fmt.Println(cekJumlah)
