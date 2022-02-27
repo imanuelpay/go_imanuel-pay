@@ -1,0 +1,34 @@
+// Kekurangan dalam code tersebut adalah penulisan class dan function,
+// Untuk penulisan agar lebih bisa membedakan class, function dan variable,
+// biasanya class menggunakan gaya Pascal Case, function menggunakan gaya Camel Case,
+// dan untuk variable menggunakan gaya Snake Case dan untuk variable di parameter
+// sebuah function biasanya menggunakan gaya Camel Case. Adapun untuk property 
+// bisa menggunakan Camel Case.
+// NOTE: Karena saya biasa menggunakan bahasa pemrograman PHP dan Dart
+
+// Perbaikan penulisan :
+
+/**
+* Untuk class User dan UserService: Pascal Case
+* Untuk function getAllUsers dan getUserById: Camel Case
+* Untuk property id, username dan password: Camel Case
+* Untuk variable users: Snake Case atau Camel Case
+* Untuk variable di parameter sebuah function seperti userId: Camel Case
+*/
+class User {
+    var id;
+    var username;
+    var password;
+}
+
+class UserService {
+    User[] users = [];
+
+    User[] getAllUsers() {
+        return users;
+    }
+
+    User getUserById(userId) {
+        return users.fillter(userId);
+    }
+}

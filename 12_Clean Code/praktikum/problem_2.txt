@@ -1,0 +1,24 @@
+class Kendaraan {
+  var totalRoda = 0;
+  var kecepatanPerJam = 0;
+}
+
+class Mobil extends Kendaraan {
+  void berjalan() {
+    tambahKecepatan(10);
+  }
+
+  tambahKecepatan(var kecepatanBaru) {
+    kecepatanPerJam += kecepatanBaru;
+  }
+}
+
+void main() {
+  mobilCepat = new Mobil();
+  mobilCepat.berjalan();
+  mobilCepat.berjalan();
+  mobilCepat.berjalan();
+
+  mobilLamban = new Mobil();
+  mobilLamban.berjalan();
+}
