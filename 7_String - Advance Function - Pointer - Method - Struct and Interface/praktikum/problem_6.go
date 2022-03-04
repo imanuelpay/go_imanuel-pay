@@ -2,10 +2,19 @@ package main
 
 import "fmt"
 
+var cipher = make(map[int]string)
+
 func main() {
 	var menu int
 	var s = Student{}
 	var c Chiper = &s
+
+	for i := 0; i < 13; i++ {
+		cipher[65+i] = string(byte(90 - i))
+		cipher[90-i] = string(byte(65 + i))
+		cipher[97+i] = string(byte(122 - i))
+		cipher[122-i] = string(byte(97 + i))
+	}
 
 	print("[1] Encrypt \n[2] Decrypt \nChoose your menu? ")
 	fmt.Scan(&menu)
@@ -38,14 +47,6 @@ func (s *Student) Encode() string {
 	var nameEncode = ""
 	name := (*s).name
 
-	var cipher = map[int]string{}
-	for i := 0; i < 13; i++ {
-		cipher[65+i] = string(byte(90 - i))
-		cipher[90-i] = string(byte(65 + i))
-		cipher[97+i] = string(byte(122 - i))
-		cipher[122-i] = string(byte(97 + i))
-	}
-
 	for _, value := range name {
 		char, isExists := cipher[int(value)]
 		if isExists {
@@ -59,14 +60,6 @@ func (s *Student) Encode() string {
 func (s *Student) Decode() string {
 	var nameDecode = ""
 	nameEncode := (*s).nameEncode
-
-	var cipher = map[int]string{}
-	for i := 0; i < 13; i++ {
-		cipher[65+i] = string(byte(90 - i))
-		cipher[90-i] = string(byte(65 + i))
-		cipher[97+i] = string(byte(122 - i))
-		cipher[122-i] = string(byte(97 + i))
-	}
 
 	for _, value := range nameEncode {
 		char, isExists := cipher[int(value)]
