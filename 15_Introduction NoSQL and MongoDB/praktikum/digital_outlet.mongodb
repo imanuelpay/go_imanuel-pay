@@ -53,11 +53,11 @@ db.payment_methods.insertMany([
 ]);
 
 db.users.insertMany([
-    { '_id': 1, 'name': 'Imanuel', 'dob': '2001-12-24', 'gender': 'M', 'status': 1, 'created_at': new Date() },
-    { '_id': 2, 'name': 'Tifanny', 'dob': '2003-12-11', 'gender': 'F', 'status': 1, 'created_at': new Date() },
-    { '_id': 3, 'name': 'Yanuar', 'dob': '2002-01-20', 'gender': 'M', 'status': 1, 'created_at': new Date() },
-    { '_id': 4, 'name': 'Grace', 'dob': '2000-04-15', 'gender': 'F', 'status': 1, 'created_at': new Date() },
-    { '_id': 5, 'name': 'Elton', 'dob': '2001-06-27', 'gender': 'M', 'status': 1, 'created_at': new Date() }
+    { '_id': 1, 'name': 'Imanuel', 'dob': new Date('2001-12-24'), 'gender': 'M', 'status': 1, 'created_at': new Date() },
+    { '_id': 2, 'name': 'Tifanny', 'dob': new Date('2003-12-11'), 'gender': 'F', 'status': 1, 'created_at': new Date() },
+    { '_id': 3, 'name': 'Yanuar', 'dob': new Date('2002-01-20'), 'gender': 'M', 'status': 1, 'created_at': new Date() },
+    { '_id': 4, 'name': 'Grace', 'dob': new Date('2000-04-15'), 'gender': 'F', 'status': 1, 'created_at': new Date() },
+    { '_id': 5, 'name': 'Elton', 'dob': new Date('2001-06-27'), 'gender': 'M', 'status': 1, 'created_at': new Date() }
 ]);
 
 db.transactions.insertMany([
