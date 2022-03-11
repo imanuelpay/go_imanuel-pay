@@ -95,7 +95,42 @@ class UserService {
 }
 ```
 
+Pada Golang:
+
+```go
+/**
+* Memperjelas nama struct dan properties dalam struct, serta meperbaiki nama varibel
+*/
+package main
+
+type User struct {
+    id       int
+    username string
+    password string
+}
+
+type UserService struct {
+    ListUser []User
+}
+
+func (userService UserService) getAllUsers() []User {
+    return userService.ListUser
+}
+
+func (userService UserService) getUserById(id int) User {
+    for _, user := range userService.ListUser {
+        if id == user.id {
+            return user
+        }
+    }
+
+    return User{}
+}
+```
+
 Berikut source code dari Problem 1 - Analisis:
+
+[problem_1.go](praktikum/problem_1.go)
 
 [problem_1.txt](praktikum/problem_1.txt)
 
@@ -159,6 +194,44 @@ void main() {
 }
 ```
 
+Pada Golang:
+
+```go
+/**
+* Memperjelas nama struct dan properties dalam struct, serta meperbaiki nama varibel
+*/
+package main
+
+type Kendaraan struct {
+    totalRoda       int
+    kecepatanPerJam float32
+}
+
+type Mobil struct {
+    Kendaraan
+}
+
+func (mobil *Mobil) berjalan() {
+    mobil.tambahKecepatan(10)
+}
+
+func (mobil *Mobil) tambahKecepatan(kecepatanBaru float32) {
+    mobil.kecepatanPerJam += kecepatanBaru
+}
+
+func main() {
+    mobilCepat := Mobil{}
+    mobilCepat.berjalan()
+    mobilCepat.berjalan()
+    mobilCepat.berjalan()
+
+    mobilLamban := Mobil{}
+    mobilLamban.berjalan()
+}
+```
+
 Berikut source code dari Problem 2 - Rewrite:
+
+[problem_2.go](praktikum/problem_2.go)
 
 [problem_2.txt](praktikum/problem_2.txt)
