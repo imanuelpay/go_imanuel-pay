@@ -1,0 +1,8 @@
+Redis
+> SCAN users
+
+Neo4j
+> MATCH (user:Users) RETURN user
+
+Cassandra
+> SELECT * FROM Alta.Users;
