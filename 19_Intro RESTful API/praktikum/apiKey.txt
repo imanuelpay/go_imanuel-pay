@@ -1,0 +1,21 @@
+cb00af7204194df596f76e58522c45f7
+
+https://newsapi.org/v2/top-headlines?country=id
+https://newsapi.org/v2/top-headlines?country=id&category=business
+https://newsapi.org/v2/top-headlines?q=ura
+https://newsapi.org/v2/top-headlines?sources=cnn
+https://newsapi.org/v2/everything?q=minyak goreng
+https://newsapi.org/v2/everything?q=rusia&from=2022-03-10&to=2022-03-10&sortBy=popularity&language=id
+https://newsapi.org/v2/everything?domains=detik.com,kompas.com
+
+https://swapi.dev/api/people
+https://swapi.dev/api/films
+https://swapi.dev/api/films/3
+https://swapi.dev/api/planets
+https://swapi.dev/api/species
+https://swapi.dev/api/starships
+https://swapi.dev/api/vehicles
+
+
+https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0
+user
