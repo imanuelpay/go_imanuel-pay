@@ -1,0 +1,41 @@
+{
+    "name": "Imanuel",
+    "email": "imanuel@gmail.com",
+    "password": "imanuel"
+}
+
+{
+    "name": "Tifanny",
+    "email": "tifanny@gmail.com",
+    "password": "tifanny"
+}
+
+{
+    "name": "Grace",
+    "email": "grace@gmail.com",
+    "password": "grace"
+}
+
+{
+    "name": "Elton",
+    "email": "elton@gmail.com",
+    "password": "elton"
+}
+
+{
+    "name": "Yanuar",
+    "email": "yanuar@gmail.com",
+    "password": "yanuar"
+}
+
+{
+    "name": "Immardion",
+    "email": "immardion@gmail.com",
+    "password": "immardion"
+}
+
+{
+    "name": "Afrizal",
+    "email": "afrizal@gmail.com",
+    "password": "afrizal"
+}
