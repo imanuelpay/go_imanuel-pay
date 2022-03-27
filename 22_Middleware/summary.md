@@ -22,11 +22,28 @@ Contoh kasus yang bisa ditangani oleh middleware antara lain:
 Source code: [Folder mvc-auth](praktikum/mvc-auth/)
 
 Code Structure:
-![problem_2.png](screenshots/problem_1TF.png)
+
+![problem_1TF.png](screenshots/problem_1TF.png)
+
+Logging:
+
+![problem_1LD.png](screenshots/problem_1LD.png)
 
 - Base URL = `http://localhost:8080`
 - Header :
   - Content-Type: `application/json`
+
+#### Login
+
+- Method : `POST`
+- Endpoint : `/login`
+- Request:
+  | Field | Type |
+  | :------ | :-------- |
+  | email | string |
+  | password | string |
+
+![problem_1UL.png](screenshots/problem_1UL.png)
 
 #### Get All Users
 
