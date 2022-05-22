@@ -13,3 +13,46 @@ Tipe Cloud Service Model. Yang mana terdiri dari Infrastructure as a Service (Ia
 - `Software as a Service` atau `SaaS`, mewakili pilihan yang paling umum digunakan untuk bisnis di pasar cloud. SaaS menggunakan internet untuk mengirimkan servis aplikasi kepada pengguna, di mana aplikasi ini dikelola oleh vendor pihak ketiga. Mayoritas aplikasi SaaS berjalan langsung melalui browser web Anda, yang berarti aplikasi tersebut tidak memerlukan unduhan atau penginstalan apa pun di sisi klien.
 
 ## Task
+
+### Deployment EC2
+
+EC2 Dashboard:
+
+![part_1.png](screenshots/part_01.png)
+
+Create Instances:
+
+![part_2.png](screenshots/part_02.png)
+![part_3.png](screenshots/part_03.png)
+![part_4.png](screenshots/part_04.png)
+![part_5.png](screenshots/part_05.png)
+
+Remote Instances:
+
+![part_06.png](screenshots/part_06.png)
+
+### Deployment RDS
+
+RDS Dashboard:
+
+![part_1.png](screenshots/part_1.png)
+
+Create Database:
+
+![part_2.png](screenshots/part_2.png)
+![part_3.png](screenshots/part_3.png)
+![part_4.png](screenshots/part_4.png)
+![part_5.png](screenshots/part_5.png)
+![part_6.png](screenshots/part_6.png)
+![part_7.png](screenshots/part_7.png)
+![part_8.png](screenshots/part_8.png)
+
+Remote Database:
+
+![part_9.png](screenshots/part_9.png)
+![part_10.png](screenshots/part_10.png)
+
+### Deployment App with EC2, RDS and MongoDB
+
+![part_07.png](screenshots/part_07.png)
+![part_08.png](screenshots/part_08.png)
