@@ -30,3 +30,4 @@ Tools untuk CI/CD:
 ![part_3.png](screenshots/part_3.png)
 ![part_4.png](screenshots/part_4.png)
 ![part_5.png](screenshots/part_5.png)
+![part_6.png](screenshots/part_6.png)
