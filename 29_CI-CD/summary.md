@@ -22,3 +22,11 @@ Tools untuk CI/CD:
 - GitLab CI/CD
 
 ## Task
+
+### CI/CD
+
+![part_1.png](screenshots/part_1.png)
+![part_2.png](screenshots/part_2.png)
+![part_3.png](screenshots/part_3.png)
+![part_4.png](screenshots/part_4.png)
+![part_5.png](screenshots/part_5.png)
